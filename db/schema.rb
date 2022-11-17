@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_17_081324) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_17_091232) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -33,7 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_17_081324) do
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.string "overview"
-    t.string "post_url"
+    t.string "poster_url"
     t.integer "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -3,7 +3,7 @@ class CreateMovies < ActiveRecord::Migration[7.0]
     create_table :movies do |t|
       t.string :title
       t.string :overview
-      t.string :post_url
+      t.string :poster_url
       t.integer :rating
 
       t.timestamps
