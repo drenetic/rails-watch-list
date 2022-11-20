@@ -1,0 +1,10 @@
+<h1>Bookmarks#show</h1>
+<p>Find me in app/views/bookmarks/show.html.erb</p>
+
+<ul>
+<% @bookmarks.each do |bookmark| %>
+  <li><%= bookmark.id %>: <%= Movie.find(bookmark.movie_id).title %> | <%= link_to 'Destroy',
+            data: {:confirm => 'Are you sure?'}, :method => :destroy %> <br>
+  <%= bookmark.comment %></li><br>
+<% end %>
+</ul>
